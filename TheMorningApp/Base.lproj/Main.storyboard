@@ -15,84 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-eberhardgross-2086620" translatesAutoresizingMaskIntoConstraints="NO" id="M8W-OB-XbI">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="QHS-at-utb">
-                                <rect key="frame" x="0.0" y="102.66666666666667" width="393" height="34.333333333333329"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKD-Qk-GrL">
-                                        <rect key="frame" x="0.0" y="0.0" width="112.66666666666667" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="📚 Words"/>
-                                        <connections>
-                                            <action selector="didSelectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NNf-BH-xRM"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujV-A4-GxX">
-                                        <rect key="frame" x="112.66666666666669" y="0.0" width="119.33333333333331" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="💬 Quotes"/>
-                                        <connections>
-                                            <action selector="didSelectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCd-MF-szJ"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mY1-IM-Sc3">
-                                        <rect key="frame" x="232" y="0.0" width="161" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="💪 Affirmations"/>
-                                        <connections>
-                                            <action selector="didSelectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5mX-Cc-nEh"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rise &amp; Shine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMJ-4b-Zn6">
-                                <rect key="frame" x="130" y="58.999999999999993" width="133" height="27.666666666666664"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bc-Df-iZT">
-                                <rect key="frame" x="16" y="767.66666666666663" width="361" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Refresh"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are the extent of our dreams" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMB-LZ-VrX">
-                                <rect key="frame" x="16" y="387.66666666666669" width="362" height="76.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="NMJ-4b-Zn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3if-ft-sO7"/>
-                            <constraint firstItem="QHS-at-utb" firstAttribute="top" secondItem="NMJ-4b-Zn6" secondAttribute="bottom" constant="16" id="Ayn-IO-Mj3"/>
-                            <constraint firstAttribute="trailing" secondItem="QHS-at-utb" secondAttribute="trailing" id="ENw-U4-79z"/>
-                            <constraint firstItem="bMB-LZ-VrX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G9s-Nt-ZuE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bMB-LZ-VrX" secondAttribute="trailing" constant="15" id="J0Z-Kr-L3W"/>
-                            <constraint firstItem="bMB-LZ-VrX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NjN-oU-N9x"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7bc-Df-iZT" secondAttribute="trailing" constant="16" id="SIc-c2-eK4"/>
-                            <constraint firstItem="NMJ-4b-Zn6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UFk-RO-gRM"/>
-                            <constraint firstItem="QHS-at-utb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VAe-1h-OXi"/>
-                            <constraint firstItem="QHS-at-utb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vcv-Ib-crU"/>
-                            <constraint firstItem="7bc-Df-iZT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="dVz-fX-RFR"/>
-                            <constraint firstAttribute="bottom" secondItem="M8W-OB-XbI" secondAttribute="bottom" id="hnF-rc-KqM"/>
-                            <constraint firstItem="M8W-OB-XbI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lOU-ls-pxu"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7bc-Df-iZT" secondAttribute="bottom" constant="16" id="o4u-tZ-mYL"/>
-                            <constraint firstItem="M8W-OB-XbI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ofg-PH-ehh"/>
-                            <constraint firstItem="M8W-OB-XbI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uhT-64-pOy"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="affirmationButton" destination="mY1-IM-Sc3" id="KbR-7H-mUQ"/>
-                        <outlet property="currentMessage" destination="bMB-LZ-VrX" id="eKr-ro-aZf"/>
-                        <outlet property="quotesButton" destination="ujV-A4-GxX" id="HOZ-6h-amn"/>
-                        <outlet property="wordsButton" destination="oKD-Qk-GrL" id="xQZ-tG-WHs"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,12 +25,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pexels-eberhardgross-2086620" width="3648" height="5472"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
