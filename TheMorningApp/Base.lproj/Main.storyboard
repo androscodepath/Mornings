@@ -15,9 +15,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-eberhardgross-2086620" translatesAutoresizingMaskIntoConstraints="NO" id="ben-u4-0f5">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Morning App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOa-V1-qlB">
+                                <rect key="frame" x="126.66666666666667" y="59.000000000000007" width="139.66666666666663" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0zq-c0-qsS">
+                                <rect key="frame" x="16" y="415.33333333333331" width="361" height="21.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemBackgroundColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="QbS-O9-lgh">
+                                <rect key="frame" x="16" y="95.333333333333329" width="361" height="34.333333333333329"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNa-WI-Alq">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.33333333333333" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="📚 Words">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changeToWords:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zLP-fc-zJm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dID-pg-LwL">
+                                        <rect key="frame" x="103.33333333333331" y="0.0" width="109.66666666666669" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="💬 Quotes">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changeToQuotes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3A8-HX-bBu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-lQ-lCX">
+                                        <rect key="frame" x="213" y="0.0" width="148" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="💪 Affirmations">
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="changeToAffirmations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96Y-un-of5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ben-u4-0f5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1ZD-5m-kwk"/>
+                            <constraint firstItem="yOa-V1-qlB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cos-nc-wdb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ben-u4-0f5" secondAttribute="trailing" id="M64-zb-nq2"/>
+                            <constraint firstItem="0zq-c0-qsS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Z2x-Wh-2RG"/>
+                            <constraint firstItem="0zq-c0-qsS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f4O-Sj-uhv"/>
+                            <constraint firstItem="QbS-O9-lgh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ipy-i3-G9v"/>
+                            <constraint firstItem="QbS-O9-lgh" firstAttribute="top" secondItem="yOa-V1-qlB" secondAttribute="bottom" constant="16" id="nOM-AR-2or"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="yOa-V1-qlB" secondAttribute="top" id="o3y-dE-10b"/>
+                            <constraint firstAttribute="bottom" secondItem="ben-u4-0f5" secondAttribute="bottom" id="rzr-gv-khL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="QbS-O9-lgh" secondAttribute="leading" constant="-16" id="wWB-K1-9lH"/>
+                            <constraint firstItem="0zq-c0-qsS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="y19-2X-wBS"/>
+                            <constraint firstItem="ben-u4-0f5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yOH-zD-lh7"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="0zq-c0-qsS" id="gGN-kf-AyZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -25,6 +95,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pexels-eberhardgross-2086620" width="3648" height="5472"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
